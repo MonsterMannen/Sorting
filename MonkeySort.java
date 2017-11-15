@@ -17,11 +17,11 @@ public class MonkeySort {
         int rand = 0;
         for(int i = 0; i < array.length; i++){
             rand = (int)(Math.random() * array.length);
-            
+
             // swap
             int temp = array[i];
             array[i] = array[rand];
-            array[rand] = temp; 
+            array[rand] = temp;
         }
         return array;
     }
@@ -35,8 +35,9 @@ public class MonkeySort {
     }
 
     public void printArray(int[] array){
-        for(int i = 0; i < array.length; i++)
-        System.out.print(array[i] + " ");
+        for(int i = 0; i < array.length; i++){
+            System.out.print(array[i] + " ");
+        }
         System.out.println();
     }
 
